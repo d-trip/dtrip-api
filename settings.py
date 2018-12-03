@@ -25,13 +25,16 @@ DOMAIN = {
             'geo': {'type': 'dict'},
         },
 
-        'datasource': {'source': 'post_object'},
+        'datasource': {
+            'source': 'post_object',
+            'default_sort': [('created', -1)],
+        },
         'resource_methods': ['GET']
     }
 }
 
 
-PAGINATION_LIMIT = 10000
+PAGINATION_LIMIT = 10_000
 
 
 MONGO_QUERY_BLACKLIST = ['$where', '$regex']
