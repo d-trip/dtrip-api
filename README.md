@@ -5,7 +5,7 @@ Api server for DTrip apps.
 ```
 docker run -d --name dtrip-api -t -d \
   -e MONGO_HOST= \
-  -e MONGO_USER= \
+  -e MONGO_USERNAME= \
   -e MONGO_PASSWORD= \
   -p 5000:5000 avral/dtrip-api
 ```
